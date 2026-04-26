@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
 	res.json({
-		message: 'Welcome to the CI/CD Practice server',
+		message: 'Welcome to the CI/CD Practice server..BOOOM..',
 		uptime: process.uptime(),
 		env: process.env.NODE_ENV || 'development',
 		hostname: os.hostname(),
