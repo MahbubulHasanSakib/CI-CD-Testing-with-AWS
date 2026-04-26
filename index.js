@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/health', (req, res) => {
-	res.json({ status: 'healthy', timestamp: Date.now() });
+	res.json({ status: 'healthy....yaayyy', timestamp: Date.now() });
 });
 
 app.listen(PORT, () => {
