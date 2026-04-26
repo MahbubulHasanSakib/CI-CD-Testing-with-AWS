@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
 	res.json({
-		message: 'Welcome to the Practice server',
+		message: 'Welcome to the CI/CD Practice server',
 		uptime: process.uptime(),
 		env: process.env.NODE_ENV || 'development',
 		hostname: os.hostname(),
@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/health', (req, res) => {
-	res.json({ status: 'ok', timestamp: Date.now() });
+	res.json({ status: 'healthy', timestamp: Date.now() });
 });
 
 app.listen(PORT, () => {
